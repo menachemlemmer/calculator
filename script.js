@@ -77,7 +77,7 @@ operators.forEach((item) => {
     display("");
     calculated = false;
     if (number1 !== "" && number2 !== "") {
-      if (number1 !== 0 && number2 == "0" && operator == "/") {
+      if (number1 !== 0 && number2 == "0" && operator == "÷") {
         clear();
         display("😂");
         return;
@@ -94,7 +94,7 @@ document.querySelector("#clear").addEventListener("click", clear);
 
 document.querySelector("#equal").addEventListener("click", () => {
   display("");
-  if (number1 !== 0 && number2 == "0" && operator == "/") {
+  if (number1 !== 0 && number2 == "0" && operator == "÷") {
     clear();
     display("😂");
     return;
